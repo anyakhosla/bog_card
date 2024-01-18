@@ -1,0 +1,55 @@
+body {
+    background-color: darkgrey;
+}
+
+p {
+    color: black;
+    background-color:powderblue;
+    font-family: monaco, Consolas, "Lucida Console", monospace;
+    width: 50%;
+    text-align: center;
+    text-shadow: 1.5px 1.5px 2px grey;
+    padding: 10px;
+}
+
+button {
+    font-family: monaco, Consolas, "Lucida Console", monospace;
+    background-color:white;
+    transition-duration: changeColor 0.5s;
+}
+
+button:hover {
+   background-color: powderblue;
+}  
+
+img {
+    border-radius: 25%;
+    width: 250px;
+    height: 340px;
+}
+
+img:hover {
+    animation: fadeInAndRotate 5s;
+}
+
+@keyframes fadeInAndRotate {
+    0% {
+        opacity: 0;
+        rotate: 0deg;
+    }
+
+    50% {
+        rotate: 180deg;
+    }
+
+    100% {
+        opacity: 1;
+        rotate: 360deg;
+    }
+}
+
+.centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
